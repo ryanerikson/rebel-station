@@ -18,7 +18,8 @@ import { Toggle } from "components/form"
 import { Read } from "components/token"
 import WithSearchInput from "pages/custom/WithSearchInput"
 import ProfileIcon from "./components/ProfileIcon"
-import Uptime from "./components/Uptime"
+// return on rebel api
+/*import Uptime from "./components/Uptime"*/
 import { ValidatorJailed } from "./components/ValidatorTag"
 import styles from "./Validators.module.scss"
 
@@ -237,20 +238,20 @@ const Validators = () => {
                 readPercent(rate.toString(), { fixed: 2 }),
               align: "right",
             },
-            {
-              title: t("Uptime"),
-              tooltip: t("90 days uptime EMA"),
-              dataIndex: "time_weighted_uptime",
-              defaultSortOrder: "desc",
-              key: "uptime",
-              sorter: (
-                { time_weighted_uptime: a = 0 },
-                { time_weighted_uptime: b = 0 }
-              ) => a - b,
-              render: (value) => !!value && <Uptime>{value}</Uptime>,
-              align: "right",
-              hidden: !isClassic,
-            },
+            // {
+            //   title: t("Uptime"),
+            //   tooltip: t("90 days uptime EMA"),
+            //   dataIndex: "time_weighted_uptime",
+            //   defaultSortOrder: "desc",
+            //   key: "uptime",
+            //   sorter: (
+            //     { time_weighted_uptime: a = 0 },
+            //     { time_weighted_uptime: b = 0 }
+            //   ) => a - b,
+            //   render: (value) => !!value && <Uptime>{value}</Uptime>,
+            //   align: "right",
+            //   hidden: !isClassic,
+            // },
             {
               title: t("Rewards"),
               tooltip: t("Estimated monthly rewards with 100 Lunc staked"),
