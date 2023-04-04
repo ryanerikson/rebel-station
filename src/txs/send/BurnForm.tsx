@@ -216,7 +216,7 @@ const BurnForm = ({ token, decimals, balance }: Props) => {
         </Card>,
         <Card>
           <div style={{ textAlign: "center" }}>
-            <BurnIcon style={{ fontSize: "104px", color: "yellow" }} />
+            <BurnIcon style={{ fontSize: "104px", color: "#ffd83d" }} />
           </div>
         </Card>,
       ]}
