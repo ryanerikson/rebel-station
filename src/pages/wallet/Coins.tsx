@@ -56,10 +56,13 @@ const Coins = () => {
           <section>
             {list.map(({ denom, ...item }) => (
               <div key={denom}>
-                <Asset {...readNativeDenom(denom, isClassic)} {...item} />
                 {denom === "uluna" && (
                   <div
-                    style={{ position: "relative", top: "-20px", left: "30px" }}
+                    style={{
+                      position: "absolute",
+                      top: "116px",
+                      left: "110px",
+                    }}
                   >
                     <Tag color={"success"}>
                       {"$ "}
@@ -67,6 +70,7 @@ const Coins = () => {
                     </Tag>
                   </div>
                 )}
+                <Asset {...readNativeDenom(denom, isClassic)} {...item} />
               </div>
             ))}
           </section>
