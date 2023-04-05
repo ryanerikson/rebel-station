@@ -13,7 +13,6 @@ import { useTnsAddress } from "data/external/tns"
 import { Auto, Card, Grid, InlineFlex } from "components/layout"
 import { Form, FormItem, Input, FormWarning } from "components/form"
 import { getPlaceholder, toInput, CoinInput } from "../utils"
-import Flex from "components/layout"
 import validate from "../validate"
 import Tx, { getInitialGasDenom } from "../Tx"
 
@@ -45,14 +44,8 @@ const BurnForm = ({ token, decimals, balance }: Props) => {
   const { register, trigger, watch, setValue, setError, handleSubmit } = form
   const { formState } = form
   const { errors } = formState
-  const { recipient, input, memo } = watch()
+  const { recipient, input } = watch()
   const amount = toAmount(input, { decimals })
-
-  const onClickAddressBookItem = async ({ recipient, memo }: AddressBook) => {
-    setValue("recipient", recipient)
-    setValue("memo", memo)
-    await trigger("recipient")
-  }
 
   /* resolve recipient */
   const { data: resolvedAddress, ...tnsState } = useTnsAddress(recipient ?? "")
