@@ -14,6 +14,7 @@ export const FINDER = "https://finder.terrarebels.net"
 export const EXTENSION =
   "https://chrome.google.com/webstore/detail/akckefnapafjbpphkefbpkpcamkoaoai"
 export const TUTORIAL = "https://www.terrarebels.net/guides"
+export const FORUMS = "https://forums.terrarebels.net"
 
 /* website: stake */
 export const TERRA_VALIDATORS =

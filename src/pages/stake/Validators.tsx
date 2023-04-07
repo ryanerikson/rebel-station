@@ -18,8 +18,7 @@ import { Toggle } from "components/form"
 import { Read } from "components/token"
 import WithSearchInput from "pages/custom/WithSearchInput"
 import ProfileIcon from "./components/ProfileIcon"
-// return on rebel api
-/*import Uptime from "./components/Uptime"*/
+// import Uptime from "./components/Uptime"
 import { ValidatorJailed } from "./components/ValidatorTag"
 import styles from "./Validators.module.scss"
 
