@@ -1,4 +1,4 @@
-name: Deploy Rebel Station
+name: Deploy Rebel Station Mobile
 on:
   push:
     branches:
