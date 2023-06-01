@@ -86,8 +86,8 @@ const isWhitelisted = (url?: string) => {
   const hostname = new URL(url).hostname
 
   return (
-    hostname.endsWith("commonwealth.im") ||
-    hostname.endsWith("terrarebels.net") ||
-    hostname.endsWith("terra.money")
+    hostname === "commonwealth.im" ||
+    hostname.endsWith(".terrarebels.net") ||
+    hostname.endsWith(".terra.money")
   )
 }
